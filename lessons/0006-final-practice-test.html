@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 6 · Final Mock Exam — all test types</title>
+<link rel="stylesheet" href="../assets/course.css">
+<link rel="stylesheet" href="../assets/quiz.css">
+<link rel="stylesheet" href="../assets/imgquiz.css">
+</head>
+<body>
+<div class="wrap">
+
+<div class="masthead">
+  <div class="kicker">Global Economy · Lesson 6 · Full mock exam · last-hour cramming</div>
+  <h1>The Final Gauntlet</h1>
+  <p class="sub">Every test type in exam order — simple choice, true/false, grouping, essay-graph, surprise. Each question checks itself or shows its answer. Run it once cold, revise the reds, run it again.</p>
+</div>
+
+<div class="note">
+  <span class="lbl">How to run this like the real thing</span>
+  Mirror of <b>Mid-term Test 3</b>: A&nbsp;simple choice · B&nbsp;true/false · C&nbsp;grouping · D&nbsp;essay-graph · E&nbsp;surprise — but with double ammunition per section. Give yourself ~35 minutes for one full pass. <b>80%+ in a section = exam-ready; anything under 60% = open the matching lesson before re-running.</b>
+</div>
+
+<!-- ============ A. SIMPLE CHOICE ============ -->
+<h2 id="choice">A · Simple choice</h2>
+<div id="q-choice"></div>
+
+<!-- ============ B. TRUE / FALSE ============ -->
+<h2 id="tf">B · True / False — watch the dates</h2>
+<div id="q-tf"></div>
+
+<!-- ============ C. GROUPING ============ -->
+<h2 id="grouping">C · Grouping</h2>
+<h3>C1 · Capitalism stages</h3>
+<div id="g-cap"></div>
+<h3>C2 · Indicator → publisher</h3>
+<div id="g-ind"></div>
+<h3>C3 · Thinker → model of change</h3>
+<div id="g-change"></div>
+<h3>C4 · Polányi — form of integration → what it requires</h3>
+<div id="g-pol"></div>
+
+<!-- ============ D. ESSAY GRAPH ============ -->
+<h2 id="essay">D · Essay graph</h2>
+<p>Two figures, straight from the slides. Type the hidden labels — this is exactly the exam task.</p>
+<div id="r-quad"></div>
+<div id="r-time"></div>
+<h3>Essay skeletons — write the missing pieces</h3>
+<div id="d-skeleton"></div>
+
+<!-- ============ E. SURPRISE ============ -->
+<h2 id="surprise">E · Surprise questions</h2>
+<p>Say the full answer <b>out loud</b> before revealing — then grade yourself honestly.</p>
+<div id="q-surprise"></div>
+
+<div class="key">
+  <span class="lbl">Last-minute date armour (the T/F section lives here)</span>
+  Capitalism: Commercial <b>1640–1780</b> · Industrial <b>1780–1870</b> · State <b>1870+</b>.<br>
+  Ágh: <b>1450–1640</b> · 1640–1780 · 1780–1870 · 1870–(?) — trade · trade · production · factors (K,L).<br>
+  Centuries: short 20th = <b>1919–1989</b>; long 20th = <b>1870~2000</b>; long 19th starts <b>1780</b>.<br>
+  Geopolitics: Bipolar <b>1945–1990</b> · Neoconservative <b>1980–2000</b> · Chaos <b>2000+</b>.<br>
+  Smith: Moral Sentiments <b>1759</b> · Wealth of Nations <b>1776</b>. Hilferding Finance Capital <b>1910</b>. Kurzweil Singularity <b>2005</b>. Sardar <b>2010</b>.
+</div>
+
+<div class="ask">
+  <b>Scored under 60% anywhere?</b> Tell me which section and I'll drill exactly that with fresh questions — or explain the cluster in two minutes.
+</div>
+
+<div class="foot">
+  <a href="0001-thinkers-and-schools.html">Thinkers quiz</a>
+  <a href="0002-grouping-and-graphs.html">Grouping drill</a>
+  <a href="0003-flashcards.html">Flashcards</a>
+  <a href="0004-read-the-graphs.html">Graphs I</a>
+  <a href="0005-read-the-graphs-2.html">Graphs II</a>
+  <a href="../reference/0001-master-cheatsheet.html">Cheat-sheet</a>
+</div>
+
+</div>
+
+<script src="../assets/quiz.js"></script>
+<script>
+/* ============ A. SIMPLE CHOICE ============ */
+GE.mcQuiz('#q-choice', 'Pick one — instant feedback', [
+  { q:'The Human Development Index (HDI) is published by —',
+    opts:['UNDP','WEF','OECD','IMD'],
+    a:0, why:'UNDP. WEF = GCI, OECD = Better Life Index, IMD = World Competitiveness Ranking, NEF = HPI.' },
+  { q:'The Happy Planet Index formula is —',
+    opts:['(life expectancy × experienced well-being) ÷ ecological footprint','GDP per capita × life satisfaction','(schooling + income) ÷ population','well-being × footprint'],
+    a:0, why:'HPI (NEF): sustainable well-being — how much well-being per unit of nature used.' },
+  { q:'The 2009 Stiglitz–Sen–Fitoussi commission argued —',
+    opts:['GDP isn’t enough — measure well-being & sustainability','GDP should be abolished','Happiness can’t be measured','Only markets measure welfare'],
+    a:0, why:'Commission on the Measurement of Economic Performance and Social Progress.' },
+  { q:'In Polányi’s scheme, redistribution requires —',
+    opts:['Centricity — a centre to move toward and out from','Symmetrically arranged groups','Price-making markets','Free trade'],
+    a:0, why:'Reciprocity ↔ symmetry; redistribution ↔ centricity; exchange ↔ price-making markets.' },
+  { q:'Which growth model assumes NO diminishing returns to (broad) capital?',
+    opts:['AK model','Solow–Swan','Harrod–Domar','Malthusian'],
+    a:0, why:'AK: “capital” includes machines + knowledge + skills + infrastructure → investment has permanent growth effects.' },
+  { q:'Romer’s endogenous-growth insight: knowledge is —',
+    opts:['Non-rival and partially excludable','Rival and fully excludable','Free and infinite','A public good nobody funds'],
+    a:0, why:'Many can use it at once (non-rival); patents make it partially excludable → R&D pays, increasing returns.' },
+  { q:'Lucas (1988) put the engine of growth in —',
+    opts:['Human capital and its spillovers (learning-by-doing)','Physical capital only','Land and resources','Money supply'],
+    a:0, why:'Limit: human capital is hard to measure.' },
+  { q:'In the oligopolistic structure, small firms living off the giants (subcontracts, cast-off tech) are —',
+    opts:['Symbionts','Outsiders','Insiders','Satellites'],
+    a:0, why:'Three tiers: oligopolistic sector · symbionts · outsiders.' },
+  { q:'The stable excess profit earned on novelty/innovation is called —',
+    opts:['“Brain rent”','Capital rent','Production rent','Routine wage'],
+    a:0, why:'Constrained factors: natural resources → production rent · capital/tech → capital rent · novelty → brain rent. Routine labour is unconstrained → lowest wage.' },
+  { q:'Gorbachev’s three reform slogans were —',
+    opts:['Uskorenie, Perestroika, Glasnost','Perestroika, Sputnik, Pravda','Glasnost, Gulag, Gosplan','Uskorenie, Kolkhoz, Mir'],
+    a:0, why:'Acceleration, restructuring, openness → 1989–91 collapse.' },
+  { q:'“Least Developed Countries” (LDCs) is an official designation of —',
+    opts:['The UN','The IMF','The World Bank','The WTO'],
+    a:0, why:'Official UN category: lowest socioeconomic indicators, weak human assets, high vulnerability.' },
+  { q:'The IMD publishes —',
+    opts:['The World Competitiveness Ranking (4 factors)','The Global Competitiveness Index','The Better Life Index','The Happy Planet Index'],
+    a:0, why:'WCR: economic performance, government efficiency, business efficiency, infrastructure.' },
+], {shuffle:true});
+
+/* ============ B. TRUE / FALSE ============ */
+GE.tfQuiz('#q-tf', 'True or false?', [
+  { s:'State capitalism began in 1780.', t:false,
+    why:'1870+. 1780 is the start of INDUSTRIAL capitalism (1780–1870).' },
+  { s:'The short 20th century runs from 1919 to 1989.', t:true,
+    why:'Boundaries: WWI settlement and the fall of the Wall.' },
+  { s:'The Big Triangle of world trade connected New England, the Caribbean and West Africa.', t:false,
+    why:'That is the SMALL Triangle. The Big Triangle: Europe – Africa – the Americas.' },
+  { s:'Commercial capitalism is dated 1640–1780.', t:true,
+    why:'Then industrial 1780–1870, state 1870+.' },
+  { s:'Ágh’s first transition (feudal economic world) is dated 1450–1640.', t:true,
+    why:'Rows: 1450–1640 · 1640–1780 · 1780–1870 · 1870–(?).' },
+  { s:'The microelectronic age began around 1980.', t:true,
+    why:'High 1870–1930s · Low 1920s–1990 · Microelectronic 1980+.' },
+  { s:'The HDI is published by the World Economic Forum.', t:false,
+    why:'UNDP. The WEF publishes the Global Competitiveness Index.' },
+  { s:'In the Solow–Swan model, technology is endogenous.', t:false,
+    why:'Exogenous — that is exactly what endogenous growth theory fixed.' },
+  { s:'Physiocracy held that wealth comes from gold and silver.', t:false,
+    why:'That is mercantilism. Physiocracy: land/agriculture is the true source of wealth.' },
+  { s:'The Bretton Woods system fell during the 1968–1973 crisis transition.', t:true,
+    why:'Protests, oil crises, stagflation, Club of Rome — the transition years.' },
+  { s:'In world-systems theory the semi-periphery stabilises the system.', t:true,
+    why:'It prevents a bipolar core-vs-periphery confrontation and is the ladder for upgrading.' },
+  { s:'Adam Smith published The Wealth of Nations in 1759.', t:false,
+    why:'1776. 1759 is The Theory of Moral Sentiments.' },
+  { s:'The bipolar geopolitical age lasted 1945–1990.', t:true,
+    why:'Then neoconservative 1980–2000 (overlapping), chaos 2000+.' },
+  { s:'“City air makes you free” refers to the medieval city.', t:true,
+    why:'Towndwellers gained freedom vs the feudal countryside.' },
+  { s:'Rostow’s final stage is the Drive to Maturity.', t:false,
+    why:'The final stage is the Age of Mass Consumption.' },
+  { s:'The long 20th century begins in the 1870s.', t:true,
+    why:'1870~ → 2000; the SHORT 20th century is 1919–1989.' },
+], {shuffle:true});
+
+/* ============ C. GROUPING ============ */
+GE.grouping('#g-cap', 'Sort into the capitalism stage',
+  ['Commercial 1640–1780','Industrial 1780–1870','State 1870+'],
+  [
+    {item:'Wealth = gold &amp; silver; trade restrictions, export controls', cat:'Commercial 1640–1780'},
+    {item:'Physiocracy — land as the source of wealth', cat:'Commercial 1640–1780'},
+    {item:'Small Triangle: rum, molasses, enslaved labour', cat:'Commercial 1640–1780'},
+    {item:'Factory system, mechanisation, free trade', cat:'Industrial 1780–1870'},
+    {item:'Malthusian trap · British world system', cat:'Industrial 1780–1870'},
+    {item:'Smith &amp; Marx on the division of labour', cat:'Industrial 1780–1870'},
+    {item:'Monopolies, cartels, finance capital (Hilferding)', cat:'State 1870+'},
+    {item:'FDI outflow, neo-colonisation, 2nd Industrial Revolution', cat:'State 1870+'},
+    {item:'List’s infant-industry protectionism', cat:'State 1870+'},
+  ]);
+
+GE.grouping('#g-ind', 'Which body publishes it?',
+  ['UNDP','WEF','NEF','OECD','IMD'],
+  [
+    {item:'HDI — Human Development Index', cat:'UNDP'},
+    {item:'GCI — Global Competitiveness Index', cat:'WEF'},
+    {item:'HPI — Happy Planet Index', cat:'NEF'},
+    {item:'BLI — Better Life Index (11 topics)', cat:'OECD'},
+    {item:'WCR — World Competitiveness Ranking (4 factors)', cat:'IMD'},
+  ]);
+
+GE.grouping('#g-change', 'Thinker → model of change',
+  ['Cyclical','Linear','Spiral'],
+  [
+    {item:'Ibn Khaldun (asabiyah)', cat:'Cyclical'},
+    {item:'Ssu-ma Ch’ien / Sima Qian', cat:'Cyclical'},
+    {item:'Vilfredo Pareto (residues)', cat:'Cyclical'},
+    {item:'Oswald Spengler', cat:'Cyclical'},
+    {item:'St. Augustine', cat:'Linear'},
+    {item:'Confucius / Kong Fuze', cat:'Linear'},
+    {item:'Adam Smith', cat:'Linear'},
+    {item:'Karl Marx (mode of production)', cat:'Spiral'},
+    {item:'Joseph Schumpeter (creative destruction)', cat:'Spiral'},
+  ]);
+
+GE.grouping('#g-pol', 'Polányi: form of integration → background it requires',
+  ['Symmetry','Centricity','Price-making markets'],
+  [
+    {item:'Reciprocity — movement between correlative points', cat:'Symmetry'},
+    {item:'Redistribution — toward a centre and out again', cat:'Centricity'},
+    {item:'Exchange — vice-versa movements between “hands”', cat:'Price-making markets'},
+  ]);
+
+/* ============ D. ESSAY GRAPH ============ */
+GE.imgReveal('#r-quad', {
+  src: '../assets/img/medieval-quadrangle.png',
+  title: 'Exam figure 1 — name the four trade circuits',
+  prompt: 'Type each hidden route name below.',
+  spots: [
+    { x:33.5, y:29.5, w:15, h:6.5, label:'Hanseatic trade', accept:['hansa','hansa trade'] },
+    { x:53.5, y:32,   w:13, h:8,   label:'Varangian trade' },
+    { x:4,    y:53,   w:16, h:11,  label:'Overland &amp; river trade', accept:['overland','river trade','overland trade','overland and river'] },
+    { x:48,   y:68,   w:15, h:6.5, label:'Levante trade', accept:['levant trade','levant'] },
+  ],
+});
+GE.imgReveal('#r-time', {
+  src: '../assets/img/short-20th-century.png',
+  title: 'Exam figure 2 — rebuild the timeline',
+  prompt: 'Boxes 1–2 hide the boundary years; 3–5 hide the era names.',
+  spots: [
+    { x:32.5, y:21.5, w:8.5, h:6,  label:'1919' },
+    { x:70.5, y:21.5, w:9,   h:6,  label:'1989' },
+    { x:14,   y:42.5, w:23,  h:6.5, label:'Long 19th century', accept:['long 19th','long nineteenth century'] },
+    { x:39,   y:43.5, w:27,  h:11,  label:'Short 20th century', accept:['short 20th','short twentieth century'] },
+    { x:77,   y:34,   w:17,  h:6.5, label:'Global age' },
+  ],
+});
+GE.typeQuiz('#d-skeleton', 'Essay skeletons — fill the missing pieces', [
+  { q:'Big Triangle, leg 1: Europe → Africa carried —',
+    a:'Finished goods (manufactures, textiles, guns)',
+    accept:['finished goods','manufactures','manufactured goods','finished products'],
+    opts:['Finished goods','Enslaved people','Raw materials','Rum and molasses'], ai:0 },
+  { q:'Big Triangle, leg 2: Africa → the Americas carried —',
+    a:'Enslaved people',
+    accept:['enslaved people','slaves','enslaved labour'],
+    opts:['Enslaved people','Sugar and cotton','Finished goods','Silver'], ai:0 },
+  { q:'Big Triangle, leg 3: the Americas → Europe carried —',
+    a:'Raw materials — sugar, cotton, tobacco',
+    accept:['raw materials','sugar cotton tobacco'],
+    opts:['Raw materials (sugar, cotton, tobacco)','Finished goods','Enslaved people','Machines'], ai:0,
+    why:'Nature of the trade: transatlantic, triangular, exploitative.' },
+  { q:'The Small Triangle’s three corners —',
+    a:'New England · the Caribbean · West Africa',
+    accept:['new england caribbean west africa'],
+    opts:['New England, Caribbean, West Africa','Europe, Africa, Americas','Britain, India, China','Spain, Mexico, Philippines'], ai:0 },
+  { q:'The Small Triangle’s three cargoes —',
+    a:'Rum · molasses · enslaved labour',
+    accept:['rum molasses enslaved labour','rum molasses slaves'],
+    opts:['Rum, molasses, enslaved labour','Silk, spices, porcelain','Sugar, coffee, cocoa','Fish, timber, fur'], ai:0 },
+  { q:'Quadrangle centres — match each to its speciality: Flanders / Italian city-states / Champagne / Baltic-Hanseatic —',
+    a:'Flanders = textiles · Italy (Venice/Genoa) = luxury · Champagne = fairs · Baltic/Hanseatic = raw materials',
+    accept:['textiles luxury fairs raw materials'],
+    opts:['Textiles · luxury · fairs · raw materials','Fairs · textiles · luxury · fish','Luxury · fairs · textiles · wool','Wine · silk · spices · grain'], ai:0 },
+  { q:'Chaos equation — define each symbol: Z<sub>t</sub>, Z<sub>t+1</sub>, c —',
+    a:'Z<sub>t</sub> = current state · Z<sub>t+1</sub> = next state · c = constant parameter (control / environment)',
+    accept:['current state next state constant','current next constant parameter'],
+    opts:['Current state · next state · constant parameter','Growth rate · time · capital','Output · input · error','Price · quantity · elasticity'], ai:0,
+    why:'It is the Mandelbrot-set iteration — the maths behind the “butterfly effect” in the global economy.' },
+]);
+
+/* ============ E. SURPRISE ============ */
+GE.revealQ('#q-surprise', 'Say it out loud, then reveal', [
+  { q:'Write the chaos equation and name its four properties.',
+    a:'Z<sub>t+1</sub> = Z<sub>t</sub>² + c — ① feed-back loops (self-regulating system) ② general law / simple rule (chaos has a hidden structure) ③ sensitivity to initial conditions (dynamic instability, no uni-linear catching up, security policy matters) ④ non-linearity (unexpected complex results; polycrisis &amp; mutual dependence).' },
+  { q:'Polányi’s three forms of integration — and what each requires in the background.',
+    a:'Reciprocity (needs <b>symmetry</b> — symmetrical groupings like kinship) · Redistribution (needs <b>centricity</b> — a centre, by custom/law/central decision) · Exchange (needs <b>price-making markets</b>).' },
+  { q:'Rostow’s five stages, in order.',
+    a:'Traditional society → Preconditions for take-off → Take-off → Drive to maturity → Age of mass consumption.' },
+  { q:'The 4 S’s and 3 C’s of postnormal times (Sardar, 2010).',
+    a:'S’s: Speed (accelerating change) · Scope (blowing up) · Scale (shrinking) · Simultaneity (multiplying). C’s: Complexity · Chaos · Contradictions. “Old orthodoxies are dying, new ones have yet to be born…”' },
+  { q:'The logistic curve’s five critical points and their meanings.',
+    a:'E lower elbow — new phenomenon proves viable, flourishing begins · I inflection — deepest qualitative change, flourishing → maturity · F upper elbow — slowing growth makes the limit visible · H saturation start — actual start of decline/run-off · Z end of run-off — function approaches its maximum (in the infinite).' },
+  { q:'The three constrained factors and their rents — and the one unconstrained factor.',
+    a:'Natural resources → <b>production rent</b> · technology/capital → <b>capital rent</b> · novelty/innovation → <b>“brain rent”</b>. Only routine labour is unconstrained → enters at its lower threshold (lowest wage). Prices are set at the upper-threshold cost of the constrained factors.' },
+  { q:'Gorbachev’s three reform words and what they mean.',
+    a:'<b>Uskorenie</b> = acceleration · <b>Perestroika</b> = restructuring · <b>Glasnost</b> = openness. 1980s Soviet reforms → 1989–91 collapse.' },
+  { q:'Hines — the three post-capitalist archetypes.',
+    a:'<b>Circular Commons</b> (environmental stewardship, shared resources) · <b>Non-Workers’ Paradise</b> (social justice; decouple labour from survival) · <b>Tech-Led Abundance</b> (innovation ends scarcity). From “Imagining After Capitalism”.' },
+  { q:'The oligopolistic structure — three tiers.',
+    a:'<b>Oligopolistic sector</b> (few dominant firms that individually move the economy) · <b>Symbionts</b> (small firms surviving off the oligopoly) · <b>Outsiders</b> (outside the structure; less profitable, peak-capacity fillers).' },
+  { q:'The three dimensions of a country’s world-economic position (the cube).',
+    a:'<b>Size of the country</b> (→ giant) · <b>position of the companies</b> (market dependent → market dominating) · <b>state of development</b> (underdeveloped → developed).' },
+  { q:'Ágh’s four stages with dates and the source of globalisation in each.',
+    a:'I. 1st transition, feudal economic world 1450–1640 — trade · II. Commercial world economy 1640–1780 — trade · III. Free market-industrial world economy 1780–1870 — production · IV. 2nd transition 1870–(?) — factors (K, L). Dynamics pulse: extensive → intensive → extensive → intensive.' },
+  { q:'Why does the semi-periphery matter in world-systems theory?',
+    a:'It <b>stabilises</b> the system — prevents a bipolar core-vs-periphery confrontation — and is the <b>ladder</b>: upgrading and catching up happen through it.' },
+]);
+</script>
+</body>
+</html>

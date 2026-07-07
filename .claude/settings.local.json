@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p assets/img)",
+      "Bash(cp \"Image 2026. 06. 28. at 23.00.png\"      \"assets/img/macrohistory-concepts-table.png\")",
+      "Bash(cp \"Image 2026. 06. 28. at 23.41.png\"      \"assets/img/logistic-lifecycle.png\")",
+      "Bash(cp \"Image 2026. 06. 28. at 23.11.png\"      \"assets/img/logistic-lifecycle-axes.png\")",
+      "Bash(cp \"Image 2026. 06. 28. at 23.40.png\"      \"assets/img/country-position-cube.png\")"
+    ]
+  }
+}

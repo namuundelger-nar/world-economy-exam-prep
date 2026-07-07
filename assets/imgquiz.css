@@ -1,0 +1,79 @@
+/* Global Economy — image-practice widget styles. Pairs with quiz.js (imgReveal + mcQuiz img support).
+   Two things live here:
+     1. Images embedded inside an mcQuiz  (.quiz-fig / .q-fig)
+     2. GE.imgReveal — an image with clickable occluder boxes over its labels (.imgq) */
+
+/* ---- Images inside a normal quiz ---- */
+.quiz-fig { margin: 0 0 1rem; }
+.quiz-fig img, .q-fig img { display: block; width: 100%; height: auto;
+  border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.quiz-fig figcaption { font-family: var(--sans); font-size: .8rem; color: var(--muted);
+  text-align: center; margin-top: .35rem; font-style: italic; }
+.q-fig { margin: .5rem 0 .7rem; max-width: 520px; }
+
+/* ---- imgReveal: hide-a-part-and-name-it ---- */
+.imgq { font-family: var(--sans); background: #fff; border: 1px solid var(--line);
+  border-radius: 10px; padding: 1rem 1.1rem 1.2rem; margin: 1.4rem 0;
+  box-shadow: 0 1px 0 rgba(0,0,0,.03); }
+.imgq-head { display: flex; justify-content: space-between; align-items: baseline; gap: .6rem 1rem;
+  flex-wrap: wrap; border-bottom: 1px solid var(--line); padding-bottom: .5rem; margin-bottom: .6rem; }
+.imgq-head .quiz-title { font-weight: 700; color: var(--accent); font-size: 1rem; }
+.imgq-score { font-variant-numeric: tabular-nums; font-size: .85rem; color: var(--muted); margin-left: auto; }
+.imgq-btns { display: flex; gap: .4rem; flex: none; }
+.imgq-prompt { font-size: .85rem; color: #444; background: #fbf7ea;
+  border-left: 3px solid var(--gold); padding: .45rem .7rem; margin: 0 0 .8rem;
+  border-radius: 0 6px 6px 0; }
+
+.imgq-fig { position: relative; margin: 0; line-height: 0; }
+.imgq-fig img { display: block; width: 100%; height: auto;
+  border: 1px solid var(--line); border-radius: 8px; }
+.imgq-layer { position: absolute; inset: 0; }
+
+/* Each spot is an opaque box covering a label; click flips it to the answer. */
+.spot { position: absolute; display: flex; align-items: center; justify-content: center;
+  box-sizing: border-box; padding: 1px 3px; margin: 0; overflow: hidden;
+  background: var(--accent2); color: #fff; border: 2px solid #fff; border-radius: 6px;
+  cursor: pointer; font-family: var(--sans); line-height: 1.05;
+  box-shadow: 0 1px 5px rgba(0,0,0,.35); transition: background .15s; }
+.spot:hover { outline: 2px solid var(--gold); }
+.spot .spot-q { font-weight: 800; font-size: clamp(.7rem, 1.5vw, 1rem); }
+.spot .spot-a { display: none; font-weight: 700; text-align: center;
+  font-size: clamp(.55rem, 1.25vw, .82rem); }
+.spot.revealed { background: rgba(47, 109, 63, .93); cursor: default; }
+.spot.revealed .spot-q { display: none; }
+.spot.revealed .spot-a { display: block; }
+
+.imgq-toggle { flex: none; }
+
+/* ---- Typed answer sheet under the figure ---- */
+.imgq-sheet { list-style: none; margin: .9rem 0 0; padding: 0;
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: .45rem .9rem; font-size: .9rem; }
+.sheet-row { display: flex; align-items: center; gap: .45rem; }
+.sheet-n { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 50%;
+  background: var(--accent2); color: #fff; font-weight: 800; font-size: .8rem;
+  display: flex; align-items: center; justify-content: center; }
+.sheet-row input { flex: 1 1 120px; min-width: 0; font: inherit; font-size: .88rem;
+  padding: .35rem .5rem; border: 1.5px solid var(--line); border-radius: 7px; background: #fff; }
+.sheet-row input:focus { outline: none; border-color: var(--accent2); }
+.sheet-row .btn { padding: .3rem .55rem; font-size: .78rem; }
+.sheet-row .sheet-a { display: none; font-weight: 700; font-size: .85rem; line-height: 1.15; }
+.sheet-row.ok input, .sheet-row.shown input { display: none; }
+.sheet-row.ok .btn, .sheet-row.shown .btn { display: none; }
+.sheet-row.ok .sheet-a { display: inline; color: var(--good); }
+.sheet-row.shown .sheet-a { display: inline; color: #8a6d1f; }
+.sheet-row.ok .sheet-n { background: var(--good); }
+.sheet-row.shown .sheet-n { background: var(--gold); }
+.sheet-row.no input { border-color: var(--bad); background: #f9ecec; animation: geshake .4s; }
+.sheet-row.hilite .sheet-n { outline: 3px solid var(--gold); }
+.imgq-clickmode .imgq-sheet { display: none; }
+.imgq-clickmode .imgq-score { visibility: hidden; }
+
+/* On paper, show the answers so the sheet is a self-contained key. */
+@media print {
+  .imgq-toggle, .imgq-mode, .imgq-score { display: none; }
+  .spot { background: rgba(47, 109, 63, .85) !important; box-shadow: none; }
+  .spot .spot-q { display: none; }
+  .spot .spot-a { display: block; }
+  .imgq-sheet { display: none; }
+}
