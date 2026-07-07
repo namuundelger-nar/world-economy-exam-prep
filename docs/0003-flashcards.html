@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 3 · Term Flashcards</title>
+<link rel="stylesheet" href="./assets/course.css">
+<link rel="stylesheet" href="./assets/quiz.css">
+
+<style>
+.lesson-nav a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2), 0 2px 4px -1px rgba(37, 99, 235, 0.1);
+    letter-spacing: 0.025em;
+}
+.lesson-nav a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3), 0 4px 6px -2px rgba(37, 99, 235, 0.15);
+    text-decoration: none;
+}
+.lesson-nav {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 80px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<div class="masthead">
+  <div class="kicker">Global Economy · Lesson 3 · Active recall</div>
+  <h1>Special-Term Flashcards</h1>
+  <p class="sub">Every named term the exam can throw at you. Say the definition <em>before</em> you flip.</p>
+</div>
+
+<div class="note">
+  <span class="lbl">Do it properly (this is the whole point)</span>
+  Read the term, <b>say the definition out loud from memory</b>, then click to flip and check. If you blanked, that card is your revision target. Recognition feels easy and lies — retrieval is what sticks.
+</div>
+
+<h2>Concepts &amp; foreign terms</h2>
+<div id="cards-core"></div>
+
+<h2>Development &amp; measurement</h2>
+<div id="cards-dev"></div>
+
+<h2>Schools &amp; history</h2>
+<div id="cards-hist"></div>
+
+<h2>Graphs, eras &amp; futures</h2>
+<div id="cards-graphs"></div>
+
+<h2>Indicators &amp; structures</h2>
+<div id="cards-ind"></div>
+
+<div class="ask">
+  <b>Any card you keep missing?</b> Tell me which and I'll explain it a different way, give you a mnemonic, or make a targeted mini-quiz. That's what I'm here for.
+</div>
+
+<div class="foot">
+  <a href="0002-grouping-and-graphs.html">← Grouping &amp; graphs</a>
+  <a href="../reference/0001-master-cheatsheet.html">Cheat-sheet</a>
+  <a href="index.html">Thinkers quiz →</a>
+  <a href="0004-read-the-graphs.html">Read the Graphs →</a>
+  <a href="0006-final-practice-test.html">Final mock exam →</a>
+</div>
+
+</div>
+
+<script src="./assets/quiz.js"></script>
+<script>
+GE.flashcards('#cards-core', [
+  {front:'Asabiyah', back:'Group solidarity (Ibn Khaldun); rises and decays over the cycle. "Asabiyah residues" = lingering tribal/clan loyalty in modern societies.'},
+  {front:'Creative destruction', back:'Schumpeter (from Marx): the "perennial gale" — new products/methods kill un-adaptive firms; capital &amp; labour reallocate to productive sectors.'},
+  {front:'Mode of production', back:'Marx: how society organises material life = forces of production (tools, tech, labour) + relations of production (class/ownership).'},
+  {front:'Substantive economy', back:'Polányi: economy as an instituted process of human–environment interaction, embedded in society.'},
+  {front:'Embedded', back:'Polányi: economic activity is fundamentally lodged within social, religious and political frameworks — not a separate sphere.'},
+  {front:'Reciprocity / Redistribution / Exchange', back:'Polányi\'s 3 forms of integration: symmetry / centre / price-making markets, respectively.'},
+  {front:'Singularity', back:'Kurzweil (2005): exponential tech change → machine intelligence surpasses humans; human/machine line dissolves.'},
+  {front:'Polycrisis', back:'Cascading global catastrophes and extinction-level risks interacting at once.'},
+  {front:'Globality (de Waal)', back:'Wholeness — a world of healthy, "whole-some" relations, grounded in empathy.'},
+]);
+
+GE.flashcards('#cards-dev', [
+  {front:'Telos', back:'Purpose / end-goal (Greek). Development seen as movement toward an end.'},
+  {front:'Eudaimonia', back:'A sense of meaning and purpose in life / good psychological functioning. Subjective well-being.'},
+  {front:'Cantril scale', back:'Subjective cognitive scaling of life satisfaction (a 0–10 "ladder"). Also Diener scale.'},
+  {front:'U-index', back:'Share of time spent in an unpleasant emotional state — a happiness/affect measure.'},
+  {front:'HDI', back:'Human Development Index (UNDP): life expectancy + schooling + GNI per capita.'},
+  {front:'HPI', back:'Happy Planet Index (NEF): (life expectancy × well-being) ÷ ecological footprint.'},
+  {front:'Latent maturity', back:'A development-model stage; potential not yet realised. (cf. developed / pseudo-developed / underdeveloped / sustainably developed.)'},
+  {front:'Middle-income trap', back:'Middle-income countries stall before high-income — fail to upgrade institutions &amp; innovation.'},
+]);
+
+GE.flashcards('#cards-hist', [
+  {front:'Immiserating growth', back:'Growth that worsens a poor country\'s terms of trade &amp; welfare (over-reliance on primary exports).'},
+  {front:'Unequal exchange', back:'Dependency idea: core–periphery trade is inherently exploitative; value flows poor → rich.'},
+  {front:'Semi-periphery', back:'Wallerstein: intermediate tier that stabilises the world-system (blocks a bipolar core-vs-periphery split).'},
+  {front:'Longue durée', back:'Braudel: long-term historical rhythms; shaped Wallerstein\'s world-systems analysis.'},
+  {front:'Inclusive vs extractive', back:'Institutions: inclusive = broad participation, secure property, innovation. Extractive = wealth to a narrow elite; stunts growth.'},
+  {front:'Malthusian trap', back:'Population growth outruns production of necessities, holding living standards low.'},
+  {front:'Mercantilism', back:'Wealth = gold &amp; silver; accumulate via trade restrictions &amp; export controls (Age of Commercial capital).'},
+  {front:'Physiocracy', back:'Economic school of the commercial-capital era; land/agriculture as the true source of wealth.'},
+  {front:'Infant industries', back:'Young industries needing temporary protection (tariffs/subsidies) to compete — Friedrich List.'},
+  {front:'Finance capital', back:'Hilferding (1910): banks + industrial capital merge → monopolistic phase of capitalism.'},
+  {front:'"City air makes you free"', back:'Medieval-city phrase: towndweller gains freedom/status vs the feudal countryside.'},
+  {front:'Washington Consensus', back:'Neoliberal policy package: trade liberalisation, austerity, deregulation, export-led growth. Critic: Stiglitz.'},
+  {front:'Perestroika / Glasnost / Uskorenie', back:'Gorbachev: restructuring / openness / acceleration — 1980s Soviet reforms → 1989–91 collapse.'},
+  {front:'"Brain rent"', back:'Oligopoly pricing: stable excess profit from the constrained novelty/innovation factor (alongside production &amp; capital rent).'},
+]);
+
+GE.flashcards('#cards-graphs', [
+  {front:'VUCA', back:'Volatility · Uncertainty · Complexity · Ambiguity. Axes: how much you know × how well you can predict results (HBR).'},
+  {front:'VUCA²', back:'The second-order stamp: Vulnerability · Uncertainty · Criticality · Artificialisation — the polycrises panel.'},
+  {front:'The 4 S\'s (Sardar)', back:'Postnormal drivers: Speed (accelerating), Scope (blowing up), Scale (shrinking), Simultaneity (multiplying).'},
+  {front:'The 3 C\'s (Sardar)', back:'Postnormal conditions: Complexity, Chaos, Contradictions. "Old orthodoxies dying, new ones not yet born."'},
+  {front:'Rostow\'s 5 stages', back:'Traditional society → Preconditions for take-off → Take-off → Drive to maturity → Age of mass consumption. (Modernisation school.)'},
+  {front:'Logistic points E·I·F·H·Z', back:'E lower elbow (proves viable) · I inflection (deepest change) · F upper elbow (limit visible) · H saturation (decline starts) · Z run-off end (max approached).'},
+  {front:'Initiation sub-phases', back:'Prenatal → Perinatal → Initiation → Verification (then Growth; Maturity = Deceleration + Saturation).'},
+  {front:'Ágh\'s pulsing', back:'Dynamics alternate extensive → intensive → extensive → intensive across 1450–1640, 1640–1780, 1780–1870, 1870–(?). Sources: trade, trade, production, factors (K,L).'},
+  {front:'Megatrend vs emerging issue', back:'Megatrend rides the OLD development curve to its plateau; emerging issues creep in on the dotted line and become the NEW curve (Gáspár 2012).'},
+  {front:'Long vs short 20th century', back:'Long: 1870~2000 (second reflex). Short: 1919–1989 (between the wars\' settlement and the Wall).'},
+  {front:'Globalisation spans', back:'Ancient empires · 1492– (Discovery) · 1870s– (2nd Industrial Rev.) · 1989–? (global age, open-ended).'},
+  {front:'Electronic ages', back:'High current age 1870–1930s (electrification) · Low current age 1920s–1990 (household electronics, radio/TV) · Microelectronic 1980+ (chip).'},
+]);
+
+GE.flashcards('#cards-ind', [
+  {front:'GCI', back:'Global Competitiveness Index — WEF. Micro + macro foundations of national competitiveness.'},
+  {front:'BLI', back:'Better Life Index — OECD. Well-being across 11 topics (housing, income, jobs, community, education…).'},
+  {front:'WCR', back:'World Competitiveness Ranking — IMD. 4 factors: economic performance, government efficiency, business efficiency, infrastructure.'},
+  {front:'PCI', back:'Per Capita Income = total income ÷ population. Ignores inequality.'},
+  {front:'NICs', back:'Newly Industrialised Countries — agriculture → export manufacturing; fast-growing, not yet developed.'},
+  {front:'LDCs', back:'Least Developed Countries — official UN designation: lowest indicators, extreme poverty, high vulnerability.'},
+  {front:'Frontier economy', back:'Smaller, less liquid, riskier than emerging — weak regulation, low transparency, but high long-term potential.'},
+  {front:'Stiglitz–Sen–Fitoussi', back:'2009 commission: "GDP isn\'t enough" — measure well-being and sustainability.'},
+  {front:'Oligopoly tiers', back:'Oligopolistic sector (few dominant firms) · Symbionts (live off the giants) · Outsiders (peak-capacity fillers).'},
+  {front:'Three rents', back:'Natural resources → production rent · capital/tech → capital rent · novelty → brain rent. Routine labour: unconstrained → lowest wage.'},
+  {front:'Developmental state', back:'State as active orchestrator: coordinates actors, corrects market failures, plans long-term, builds infrastructure.'},
+  {front:'Polányi\'s 3 forms', back:'Reciprocity (symmetry) · Redistribution (centricity) · Exchange (price-making markets).'},
+]);
+</script>
+
+<div class="lesson-nav" style="margin: 40px auto; max-width: 800px; display: flex; justify-content: space-between; padding: 20px;">
+  <div><a href="0002-grouping-and-graphs.html">&larr; Previous Lesson</a></div>
+    <div><a href="0004-read-the-graphs.html">Next Lesson &rarr;</a></div>
+</div>
+</body>
+</html>

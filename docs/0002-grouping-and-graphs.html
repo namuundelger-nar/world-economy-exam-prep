@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lesson 2 · Grouping &amp; Graphs Drill</title>
+<link rel="stylesheet" href="./assets/course.css">
+<link rel="stylesheet" href="./assets/quiz.css">
+
+<style>
+.lesson-nav a {
+    display: inline-block;
+    padding: 12px 28px;
+    background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2), 0 2px 4px -1px rgba(37, 99, 235, 0.1);
+    letter-spacing: 0.025em;
+}
+.lesson-nav a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3), 0 4px 6px -2px rgba(37, 99, 235, 0.15);
+    text-decoration: none;
+}
+.lesson-nav {
+    border-top: 1px solid #e5e7eb;
+    margin-top: 80px !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+</style>
+
+</head>
+<body>
+<div class="wrap">
+
+<div class="masthead">
+  <div class="kicker">Global Economy · Lesson 2 · Test-3 targeted</div>
+  <h1>Grouping &amp; Graphs</h1>
+  <p class="sub">Straight at the Grouping (5p) and Essay-graph (5p) sections. Drill the dates until automatic.</p>
+</div>
+
+<div class="note">
+  <span class="lbl">Sort each item into its era</span>
+  Pick the category for every row, then hit <b>Check answers</b>. Green = right. Re-sort until you score 100%.
+</div>
+
+<h2>a · Capitalism stages</h2>
+<div id="g-cap"></div>
+
+<h2>b · "Current age" (technology)</h2>
+<div id="g-age"></div>
+
+<h2>c · Geopolitics</h2>
+<div id="g-geo"></div>
+
+<h2>d · Ágh — cycles &amp; pulsing (stage → its row)</h2>
+<div id="g-agh"></div>
+
+<h2>e · Globalisation spans (event → span)</h2>
+<div id="g-span"></div>
+
+<h2>Essay graphs — centres &amp; products</h2>
+<p>The essay asks for <b>centres, traded products, and the nature of trade</b>. Drill the details:</p>
+<div id="q-graphs"></div>
+
+<h2>The chaos equation</h2>
+<div id="q-chaos"></div>
+
+<div class="key">
+  <span class="lbl">Essay skeleton you can reproduce</span>
+  <b>Big Triangle:</b> Europe → Africa (finished goods) → Americas (enslaved people) → Europe (raw materials: sugar, cotton, tobacco). Transatlantic, triangular, exploitative.<br>
+  <b>Small Triangle:</b> New England ↔ Caribbean ↔ West Africa — rum, molasses, enslaved labour.<br>
+  <b>Medieval quadrangle:</b> Flanders (textiles) · Italian city-states (luxury) · Champagne (fairs) · Baltic/Hanseatic (raw materials) — links N. Europe ↔ Mediterranean.
+</div>
+
+<div class="ask">
+  <b>Want to rehearse the essay out loud?</b> Type your explanation of any graph to me and I'll grade it like an examiner and fill the gaps. Or ask me to add harder grouping items.
+</div>
+
+<div class="foot">
+  <a href="index.html">← Thinkers &amp; schools</a>
+  <a href="../reference/0001-master-cheatsheet.html">Cheat-sheet</a>
+  <a href="0003-flashcards.html">Term flashcards →</a>
+  <a href="0004-read-the-graphs.html">Read the Graphs →</a>
+  <a href="0006-final-practice-test.html">Final mock exam →</a>
+</div>
+
+</div>
+
+<script src="./assets/quiz.js"></script>
+<script>
+GE.grouping('#g-cap', 'Sort into the capitalism stage',
+  ['Commercial 1640–1780','Industrial 1780–1870','State 1870+'],
+  [
+    {item:'Mercantilism, trade monopolies, colonial expansion', cat:'Commercial 1640–1780'},
+    {item:'Small Triangle of world trade · Physiocracy', cat:'Commercial 1640–1780'},
+    {item:'Mechanisation, factory system, free trade', cat:'Industrial 1780–1870'},
+    {item:'Malthusian trap · British world system', cat:'Industrial 1780–1870'},
+    {item:'Monopolies, cartels, finance capital (Hilferding)', cat:'State 1870+'},
+    {item:'FDI outflow · neo-colonisation · 2nd Industrial Revolution', cat:'State 1870+'},
+  ]);
+
+GE.grouping('#g-age', 'Sort into the current-age stage',
+  ['High 1870–1930s','Low 1920s–1990','Microelectronic 1980+'],
+  [
+    {item:'Electrification, chemical industry, heavy engineering', cat:'High 1870–1930s'},
+    {item:'Mass production &amp; consumption, radio, television', cat:'Low 1920s–1990'},
+    {item:'Computing, information tech, global networks', cat:'Microelectronic 1980+'},
+    {item:'Personal computer → decentralisation, SME revolution', cat:'Microelectronic 1980+'},
+  ]);
+
+GE.grouping('#g-geo', 'Sort into the geopolitical age',
+  ['Bipolar 1945–1990','Neoconservative 1980–2000','Chaos 2000+'],
+  [
+    {item:'Cold War, US vs USSR, ideological blocs', cat:'Bipolar 1945–1990'},
+    {item:'Deregulation, privatisation, globalisation, Reaganomics', cat:'Neoconservative 1980–2000'},
+    {item:'Decentralised threats, financial volatility, digital disruption', cat:'Chaos 2000+'},
+  ]);
+
+GE.grouping('#g-agh', 'Sort each description into its Ágh stage',
+  ['I · 1450–1640 feudal','II · 1640–1780 commercial','III · 1780–1870 industrial','IV · 1870–(?) 2nd transition'],
+  [
+    {item:'Intact interaction · extensive dynamics · source: trade', cat:'I · 1450–1640 feudal'},
+    {item:'1st transition — the feudal economic world', cat:'I · 1450–1640 feudal'},
+    {item:'Intact interaction · intensive dynamics · source: trade', cat:'II · 1640–1780 commercial'},
+    {item:'Commercial world economy', cat:'II · 1640–1780 commercial'},
+    {item:'Transformative interaction · source: production', cat:'III · 1780–1870 industrial'},
+    {item:'Free market-industrial world economy', cat:'III · 1780–1870 industrial'},
+    {item:'Synthesis · intensive · source: factors (K,L)', cat:'IV · 1870–(?) 2nd transition'},
+  ]);
+
+GE.grouping('#g-span', 'Which globalisation span does it anchor?',
+  ['Ancient empires','1492 –','1870s –','1989 – ?'],
+  [
+    {item:'Columbus crosses the Atlantic — Age of Discovery', cat:'1492 –'},
+    {item:'Divergent empires before a connected world', cat:'Ancient empires'},
+    {item:'2nd Industrial Revolution, state capitalism (the "second reflex")', cat:'1870s –'},
+    {item:'Fall of the Berlin Wall — the open-ended global age', cat:'1989 – ?'},
+    {item:'Big Triangle of world trade begins', cat:'1492 –'},
+    {item:'Microchip &amp; neoliberal globalisation', cat:'1989 – ?'},
+  ]);
+
+GE.mcQuiz('#q-graphs', 'Trade-graph details', [
+  { q:'On the Big Triangle, what moved Africa → Americas?',
+    opts:['Enslaved people','Rum and molasses','Finished textiles','Silver and gold'],
+    a:0, why:'Big Triangle: goods (Eur→Afr), <b>enslaved people</b> (Afr→Amr), raw materials (Amr→Eur).' },
+  { q:'The Medieval commercial quadrangle mainly connected —',
+    opts:['N. Europe ↔ Mediterranean','Europe ↔ Americas','New England ↔ Africa','Asia ↔ Baltic'],
+    a:0, why:'Flanders, Italian city-states, Champagne and the Baltic/Hanseatic linked N. Europe to the Med.' },
+  { q:'Flanders was the quadrangle centre known for —',
+    opts:['Textiles','Luxury goods','Trade fairs','Fish and grain'],
+    a:0, why:'Flanders = textiles; Italy = luxury; Champagne = fairs; Baltic/Hanseatic = raw materials.' },
+  { q:'The Small Triangle chiefly traded —',
+    opts:['Rum, molasses, enslaved labour','Silk, spices, porcelain','Coal, steel, machines','Gold, ivory, salt'],
+    a:0, why:'Small Triangle: New England ↔ Caribbean ↔ West Africa — rum, molasses, enslaved labour.' },
+  { q:'The fair centre of the quadrangle was —',
+    opts:['Champagne','Flanders','Venice','Lübeck'],
+    a:0, why:'Champagne = fairs; Flanders = textiles; Italy = luxury; Baltic/Hanseatic = raw materials.' },
+  { q:'The medieval royal road across the Holy Roman Empire, marked twice on the slide map —',
+    opts:['Via Regia','Via Appia','Silk Road','Amber Road'],
+    a:0, why:'Via Regia — the overland backbone between the quadrangle corners.' },
+  { q:'The Varangian route linked —',
+    opts:['Novgorod to Constantinople via Kiev','Bruges to Venice via Champagne','Lübeck to London via Bruges','Riga to Alexandria via Athens'],
+    a:0, why:'"From the Varangians to the Greeks" — rivers from the Baltic to Byzantium.' },
+  { q:'On the Big Triangle, the Americas → Europe leg carried —',
+    opts:['Raw materials: sugar, cotton, tobacco','Finished goods','Enslaved people','Rum and molasses'],
+    a:0, why:'Goods Eur→Afr; enslaved people Afr→Amr; raw materials Amr→Eur.' },
+], {shuffle:true});
+
+GE.mcQuiz('#q-chaos', 'Z(t+1) = Z(t)² + c', [
+  { q:'The equation Z<sub>t+1</sub> = Z<sub>t</sub>² + c is the iteration behind —',
+    opts:['The Mandelbrot set','The logistic S-curve','The Solow model','The Cantril ladder'],
+    a:0, why:'It is the Mandelbrot-set iteration — the maths of chaos/complexity.' },
+  { q:'In that equation, what does "c" represent?',
+    opts:['A constant parameter (control/environment)','The current system state','The growth rate','The next time step'],
+    a:0, why:'c = constant parameter (the control/environment); Z_t = current state, Z_{t+1} = next state.' },
+  { q:'Its point for the global economy is that —',
+    opts:['Tiny changes cause unpredictable outcomes','Growth always returns to equilibrium','Markets self-correct linearly','History repeats on fixed cycles'],
+    a:0, why:'The "butterfly effect": small changes → non-linear, unpredictable shifts from stability to volatility.' },
+], {shuffle:true});
+</script>
+
+<div class="lesson-nav" style="margin: 40px auto; max-width: 800px; display: flex; justify-content: space-between; padding: 20px;">
+  <div><a href="index.html">&larr; Previous Lesson</a></div>
+    <div><a href="0003-flashcards.html">Next Lesson &rarr;</a></div>
+</div>
+</body>
+</html>
